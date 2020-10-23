@@ -1,0 +1,101 @@
+++++++++++++++ For npm package manager ++++++++++++
+npm install @react-native-community/async-storage @react-native-community/masked-view @react-navigation/native @react-navigation/stack native-base react-native-gesture-handler react-native-reanimated react-native-safe-area-context react-native-screens react-native-vector-icons shortid
+
+++++++++++++++ For yarn package manager ++++++++++++
+yarn add @react-native-community/async-storage @react-native-community/masked-view @react-navigation/native @react-navigation/stack native-base react-native-gesture-handler react-native-reanimated react-native-safe-area-context react-native-screens react-native-vector-icons shortid
+
+++++++++++++ Configuration JS ++++++++++++++
+
+Edit android/app/build.gradle (NOT android/build.gradle) and add the following:
+
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
+SAFETY RUN: (Based on package manager)
+    - npm install
+    (or)
+    - yarn
+
+++++++++++++ Configuration JS ++++++++++++++
+
+
+Stylesheet for 3 pages:
+
++++++++++++++++++ Home JS ++++++++++++++++++
+
+const styles = StyleSheet.create({
+    emptyContainer: {
+        backgroundColor: '#1b262c',
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    container: {
+        backgroundColor: '#1b262c',
+        flex: 1,
+    },
+    heading: {
+        textAlign: 'center',
+        color: '#00b7c2',
+        marginVertical: 15,
+        marginHorizontal: 5,
+    },
+    actionButton: {
+        marginLeft: 5,
+    },
+    seasonName: {
+        color: '#fdcb9e',
+        textAlign: 'justify',
+    },
+    listItem: {
+        marginLeft: 0,
+        marginBottom: 20,
+    },
+});
+
++++++++++++++++++ Home JS ++++++++++++++++++
+
+
++++++++++++++++++ Add JS ++++++++++++++++++
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#1b262c',
+    flex: 1,
+    justifyContent: 'flex-start',
+  },
+  heading: {
+    textAlign: 'center',
+    color: '#00b7c2',
+    marginHorizontal: 5,
+    marginTop: 50,
+    marginBottom: 20,
+  },
+  formItem: {
+    marginBottom: 20,
+  },
+});
+
++++++++++++++++++ Add JS ++++++++++++++++++
+
+
++++++++++++++++++ Edit JS ++++++++++++++++++
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#1b262c',
+    flex: 1,
+    justifyContent: 'flex-start',
+  },
+  heading: {
+    textAlign: 'center',
+    color: '#00b7c2',
+    marginHorizontal: 5,
+    marginTop: 50,
+    marginBottom: 20,
+  },
+  formItem: {
+    marginBottom: 20,
+  },
+});
+
++++++++++++++++++ Edit JS ++++++++++++++++++
